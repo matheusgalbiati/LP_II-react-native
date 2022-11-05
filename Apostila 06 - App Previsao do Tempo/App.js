@@ -38,14 +38,16 @@ export default function App() {
           title="Ok"
           onPress={obtemPrevisoes}
         />
-        <FlatList
-          data={previsoes}
-          renderItem={
-            previsao => (
-              <PrevisaoItem previsao={previsao} />
-            )
-          }
-        />
+        <View>
+          <FlatList
+            data={previsoes}
+            renderItem={
+              previsao => (
+                <PrevisaoItem previsao={previsao} />
+              )
+            }
+          />
+        </View>
       </View>
     </View>
   );
